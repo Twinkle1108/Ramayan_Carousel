@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.bg-color {
+    background-color: #ff7722;
+    width: 100%;
+}
+
+.nav-bg {
+    background: linear-gradient(to bottom right, #ff7722 0%, #e34234 100%);
+}
+
+.nav-logo {
+    height: 40px;
+}
+
+.card {
+    height: 550px;
+    width: 700px;
+}
+
+.card-img-top {
+    height: 300px;
+}
+
+.carousel-colors {
+    background-color: #ff7722;
+    height: 100vh;
+}
+
+.button {
+    color: white;
+    background-color: orange;
+    height: 30px;
+    width: 140px;
+    border-radius: 6px;
+    border-width: 0px;
+}
+
+.home-page {
+    background-color: #ff7722;
+    height: 100vh;
+}
+
+.d-block {
+    height: 729px;
+    width: 410px;
+}
+
+.hr-line {
+    background-color: #FFFFF0;
+}
+
+.footer-section-copyright {
+    color: #FFFFF0;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.icon {
+    font-size: 25px;
+    color: #FFFFF0;
+}

@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="bg-color">
+        <nav class="navbar navbar-expand-lg navbar-dark nav-bg">
+            <a class="navbar-brand" href="#">
+                <img src="https://as2.ftcdn.net/v2/jpg/05/79/96/31/1000_F_579963135_9bAQJmmPtr0pOkd2zhI3ljWOyyatR2st.jpg" class="nav-logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-dark" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link active" href="#sectionHome">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link active" href="#sectionLeadCharacters">Lead characters</a>
+                    <a class="nav-link active" href="#sectionAyodhyaCharacters">Ayodhya</a>
+                    <a class="nav-link active" href="#sectionMithilaCharacters">Mithila</a>
+                    <a class="nav-link active" href="#sectionKishkindaCharacters">Kishkinda</a>
+                    <a class="nav-link active" href="#sectionLankaCharacters">Lanka</a>
+                    <a class="nav-link active" href="#sectionSageCharacters">Sages</a>
+                </div>
+            </div>
+        </nav>
+        <div id="sectionHome">
+            <div class="container">
+                <div class="row">
+                    <div class="home-page col-12 col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://vedicfeed.com/wp-content/uploads/2023/04/Ramayana.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Lead Characters of Ramayanam</h5>
+                                <p class="card-text">Here you can see the most mentioned or the most important Characters of the Epic Ramayanam.</p>
+                                <a href="#" class="btn btn-primary" onclick="display('sectionLeadCharacters')">Go to Lead Characters</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-page col-12 col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://img.freepik.com/premium-photo/captivating-diwali-night-ayodhya-temple-by-river-aglow-with-stunning-diya-lights-ai-generated_610092-190.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Characters of Ramayanam from Ayodhya</h5>
+                                <p class="card-text">Here you can see the Characters of the Epic Ramayanam from the City of Ayodhya, the birthplace of Lord Ram.</p>
+                                <a href="#" class="btn btn-primary" onclick="display('sectionAyodhyaCharacters')">Go to Ayodhya Characters</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-page col-12 col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://images.nightcafe.studio/jobs/qLiyjra0IPV405TtGhMk/qLiyjra0IPV405TtGhMk--1--q1kbb.jpg?tr=w-1600,c-at_max" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Characters of Ramayanam from Mithila</h5>
+                                <p class="card-text">Here you can see the Characters of the Epic Ramayanam from the City of Mithila, the birthplace of Goddess Sita.</p>
+                                <a href="#" class="btn btn-primary" onclick="display('sectionMithilaCharacters')">Go to Mithila Characters</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-page col-12 col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://images.2moons.ai/prompt/slices/1/watermarked/kishkinda-kingdom-fighting-space-bright-vibrant_w2WdV.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Characters of Ramayanam from Kishkinda</h5>
+                                <p class="card-text">Here you can see the Characters of the Epic Ramayanam from the City of Kishkinda, the birthplace of Lord Hanuman.</p>
+                                <a href="#" class="btn btn-primary" onclick="display('sectionKishkindaCharacters')">Go to Kishkinda Characters</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-page col-12 col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://preview.redd.it/ravanas-palace-in-golden-lanka-v0-3utgldpbynkb1.jpg?width=640&crop=smart&auto=webp&s=add84a6539a1364b753728cd3898abb0f645bf88" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Characters of Ramayanam from Lanka</h5>
+                                <p class="card-text">Here you can see the Characters of the Epic Ramayanam from the City of Lanka, the epic kingdom of Ravana.</p>
+                                <a href="#" class="btn btn-primary" onclick="display('sectionLankaCharacters')">Go to Lanka Characters</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-page col-12 col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://storage.googleapis.com/pai-images/523fd06d6fb849519690af467a135616.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Sages mentioned in Ramayanam</h5>
+                                <p class="card-text">Here you can see the Sages mentioned in the Epic Ramayanam, Who played an important role in Lord Ram's life.</p>
+                                <a href="#" class="btn btn-primary" onclick="display('sectionSageCharacters')">Go to the Sages</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="sectionLeadCharacters">
+            <div class="col-12">
+                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active carousel-colors">
+                            <img src="https://i.pinimg.com/originals/f8/c1/41/f8c14106e00f2633a0aa626c915e8b43.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                                <h3>Lord Ram</h3>
+                                <p>Lord Rama is the seventh avatar of Vishnu.Rama is known for his courage, loyalty, and devotion. He is also considered the embodiment of righteousness, devotion, and sacrifice. Rama's life story is a reminder of the importance of values and principles in our lives.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-colors">
+                            <img src="https://img.freepik.com/premium-photo/front-view-ultra-detailed-goddess-sita_1018057-51.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                                <h3>Sita</h3>
+                                <p>Sita is a goddess born from the earth.She is the consort of Lord Ram. She is also the incarnation of Lakshmi, goddess of prosperity, wealth, and beauty. Sita is portrayed as the ideal wife and woman.She is known for her dedication, self-sacrifice, courage, and purity.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-colors">
+                            <img src="https://preview.redd.it/image-of-lord-ram-generated-by-ai-v0-2fy738yhnlrb1.jpg?width=1024&format=pjpg&auto=webp&s=e9cbad10641e122548a6ae4a7142bf64f485b572" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                                <h3>Lakshman</h3>
+                                <p>The third son of King Dasharatha was an incarnation of Sesha Naga. He was the twin brother of Shatrughna born to Queen Sumitra. He was the only brother who followed Lord Rama through his exile and battle against Ravana.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-colors">
+                            <img src="https://media.licdn.com/dms/image/D5612AQHKT5w-oXAgGA/article-cover_image-shrink_720_1280/0/1701407360553?e=2147483647&v=beta&t=00DbvCXSv4qQ26eK5bjMj4nbNh3dAnONk59EITTq9vo" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                                <h3>Ravan</h3>
+                                <p>The son of Vishrava and Kaikashi,Ravana is a 10-headed demon king in Hindu mythology. He is the main antagonist in the epic Ramayana, where he kidnaps Rama's wife Sita. He is often depicted as a powerful and menacing villain, but he is also well respected for his vast knowledge and wisdom.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-colors">
+                            <img src="https://i.pinimg.com/236x/d6/8d/60/d68d60704dca30af9762a86c30c1b817.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                                <h3>Hanuman</h3>
+                                <p>Hanuman is a devotee of Rama.Hanuman is known for his strength, loyalty, and courage. He is also known for his ability to fly and to change his size.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="d-flex flex-row justify-content-center m-4">
+                    <button class="button" onclick="display('sectionHome')">Back</button>
+                </div>
+            </div>
+        </div>
+        <div id="sectionAyodhyaCharacters">
+            <div class="col-12">
+                <div id="ayodhyaCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#ayodhyaCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#ayodhyaCarousel" data-slide-to="1"></li>
+                        <li data-target="#ayodhyaCarousel" data-slide-to="2"></li>
+                        <li data-target="#ayodhyaCarousel" data-slide-to="3"></li>
+                        <li data-target="#ayodhyaCarousel" data-slide-to="4"></li>
+                        <li data-target="#ayodhyaCarousel" data-slide-to="5"></li>
+                        <li data-target="#ayodhyaCarousel" data-slide-to="6"></li>
+                        <li data-target="#ayodhyaCarousel" data-slide-to="7"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active carousel-colors">
+                            <img src="https://images.nightcafe.studio/jobs/moYOUFPd2EgBNOBSlqU5/moYOUFPd2EgBNOBSlqU5--1--h6c30.jpg?tr=w-1600,c-at_max" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                                <h3>King Dashratha</h3>
+                                <p>King Dasharatha is a character in the Hindu epic Ramayana. He was the king of Kosala and the father of Rama, who is considered to be an incarnation of the Hindu god Vishnu. Dasharatha was a great warrior and a just ruler. He was also a loving father to his sons.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-colors">
+                            <img src="https://i.pinimg.com/736x/a3/d6/ed/a3d6edaa79ffcd0d00c13b1b5526674f.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                                <h3>Kausalya</h3>
+                                <p> Kausalya is the senior queen of Kosala and wife of King Dasharatha. She is the mother of Rama, the epic's hero.
+                                    Kausalya is depicted as an ideal mother, wife, and queen. She is wise, compassionate, and devoted to her family. She is also a symbol of endurance and suffering.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-colors">
+                            <img src="https://images1.dnaindia.com/images/DNA-EN/900x1600/2023/6/13/1686636432804_WhatsAppImage20230613at11.28.09.jpeg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                                <h3>Sumitra</h3>
+                                <p>Sumitra is a princess of Kashi in Hindu mythology. In the Ramayana, she is one of the three wives of King Dasharatha of Ayodhya and the mother of the twin brothers, Lakshmana and Shatrughna. Sumitra is portrayed as a virtuous and wise queen who loves her sons deeply and guides them on the path of righteousness.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-colors">
+                            <img src="https://images1.dnaindia.com/images/DNA-EN/900x1600/2023/6/13/1686636395723_WhatsAppImage20230613at11.28.11.jpeg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                                <h3>Kaikeyi</h3>
+                                <p>Kaikeyi is the third queen and wife of King Dasharatha in the Hindu epic Ramayana. She was the princess of Kekeya, a kingdom that was located in the western part of India. She was also the mother of Prince Bharata.
+                                    Kaikeyi was known for her strong will and her ability to influence her husband. She was also a skilled warrior and an able counselor to the king. However, she was also known for her jealousy and her ambition.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-colors">
+                            <img src="https://english.cdn.zeenews.com/sites/default/files/2023/07/18/1243258-lakshmana-3.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                                <h3>Bharata</h3>
+                                <p>Bharata is a character in the Indian epic Ramayana. He is the second son of King Dasharatha and the brother of Lord Rama. Bharata is known for his righteousness, justice, and wisdom. He is regarded as the incarnation of Panchajanya, the divine conch of Lord Vishnu.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-colors">
+                            <img src="https://english.cdn.zeenews.com/sites/default/files/2023/07/18/1243262-rama-1.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                                <h3>Shatrughan</h3>
+                                <p>Shatrughna is the youngest of four brothers and the twin of Lakshmana. His other brothers are Rama and Bharata. He is the son of Queen Sumitra and King Dasharatha of Ayodhya. </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-colors">
+                            <img src="https://images.catchnews.com/upload/2023/01/27/FnX4SPgagAAGlUw.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                                <h3>Sumantra</h3>
+                                <p> Sumantra was the prime minister to King Dasharatha of Ayodhya. He was the most trusted advisor of the king and one of the eight diplomatic artists in the king's court. Sumantra was known for his loyalty to the rulers of Ayodhya and his knowledge of many royal family secrets. He helped Prince Rama in his exile. </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-colors">
+                            <img src="https://qph.cf2.quoracdn.net/main-qimg-3dce43706bccda28c7e35a9e4e503644-lq" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                                <h3>Mantara</h3>
+                                <p>Manthara is a character in the Hindu epic Ramayana. In the epic, she is described to have convinced Queen Kaikeyi that the throne of Ayodhya belonged to her son Bharata and that her step-son—crown-prince Rama (the protagonist of the Ramayana)—should be exiled from the kingdom.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#ayodhyaCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#ayodhyaCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="d-flex flex-row justify-content-center m-4">
+                    <button class="button" onclick="display('sectionHome')">Back</button>
+                </div>
+            </div>
+        </div>
+        <div id="sectionMithilaCharacters">
+            <div class="col-12">
+                <div id="mithilaCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#mithilaCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#mithilaCarousel" data-slide-to="1"></li>
+                        <li data-target="#mithilaCarousel" data-slide-to="2"></li>
+                        <li data-target="#mithilaCarousel" data-slide-to="3"></li>
+                        <li data-target="#mithilaCarousel" data-slide-to="4"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active carousel-colors">
+                            <img src="https://english.cdn.zeenews.com/sites/default/files/2023/07/18/1243256-dashratha-5.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                                <h3>King Janak</h3>
+                                <p>King Janaka is a character in the Hindu epic Ramayana. He was the king of Videha, a region in India, and the adoptive father of Sita. Janaka was known for his wisdom and spirituality, and was considered a Rajarishi, or royal sage. He was also known for his non-attachment to material possessions.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-colors">
+                            <img src="https://images.nightcafe.studio/jobs/bu5BoMyBV7Q66XPSs032/bu5BoMyBV7Q66XPSs032--1--ukdzz.jpg?tr=w-1600,c-at_max" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                                <h3>Sunaina</h3>
+                                <p>Sunaina is a character in the Ramayana. She was the queen of Mithila, the wife of King Janaka, and the mother of Sita and Urmila. </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-colors">
+                            <img src="https://preview.redd.it/images-of-lord-ram-and-princess-sita-created-using-v0-ynrenz32csya1.png?width=640&crop=smart&auto=webp&s=9f2c75aecb46c878a8b618e23d1d9728af6f603f" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                                <h3>Urmila</h3>
+                                <p>Urmila is a significant character in the Hindu epic Ramayana. She is the daughter of King Janaka of Mithila and Queen Sunayana, and the sister of Sita. She is married to Lakshmana, the younger brother of Lord Rama. Urmila is often referred to as "the forgotten heroine" because of her minor role in the Ramayana. However, her sacrifice is unparalleled.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-colors">
+                            <img src="https://timesofindia.indiatimes.com/photo/104724271/104724271.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                                <h3>Mandavi</h3>
+                                <p>Mandavi was the wife of Bharat, younger brother if Lord Rama and the elder Princess of Sankashya. She was the incarnation of Mahalakshmi's flower. Her father was King Kushadwaja, younger brother of King Janaka, and Chandrabhaga.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-colors">
+                            <img src="https://timesofindia.indiatimes.com/photo/104724286/104724286.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                                <h3>ShrutaKirti</h3>
+                                <p>Shrutakirti is a character in the Hindu epic, Ramayana. She is the daughter of King Kushadhvaja and Queen Chandrabhaga, and the younger sister of Sita. Shrutakirti is the wife of Shatrughna, the youngest brother of Rama. She is considered to be an incarnation of the disc of the goddess Lakshmi.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#mithilaCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#mithilaCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="d-flex flex-row justify-content-center m-4">
+                    <button class="button" onclick="display('sectionHome')">Back</button>
+                </div>
+            </div>
+        </div>
+        <div id="sectionKishkindaCharacters">
+            <div class="col-12">
+                <div id="kishkindaCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#kishkindaCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#kishkindaCarousel" data-slide-to="1"></li>
+                        <li data-target="#kishkindaCarousel" data-slide-to="2"></li>
+                        <li data-target="#kishkindaCarousel" data-slide-to="3"></li>
+                        <li data-target="#kishkindaCarousel" data-slide-to="4"></li>
+                        <li data-target="#kishkindaCarousel" data-slide-to="5"></li>
+                        <li data-target="#kishkindaCarousel" data-slide-to="6"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active carousel-colors">
+                            <img src="https://qph.cf2.quoracdn.net/main-qimg-86fa4d76a05cdf2523cecb56b998746c" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                                <h3>Vali</h3>
+                                <p>Vali is a character in the Hindu epic Ramayana. He is the King of Kishkindha, a kingdom of vanaras (monkeys) in the Ramayana. Vali is the son of Indra, the god of thunder, and the elder brother of Sugriva. He is also the husband of Tara and the father of Angada.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-colors">
+                            <img src="https://english.cdn.zeenews.com/sites/default/files/2023/07/18/1243259-sita-2.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                                <h3>Tara</h3>
+                                <p>She is the daughter of the monkey physician Sushena, and the wife of the monkey king Vali. Tara and Vali have a son named Angada.
+                                    Tara is described as a wise woman who always gives good counsel to her husband. She is also a skilled diplomat, and uses her skills to benefit her kingdom. Tara is also a loving mother, and is very close to her son Angada.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-colors">
+                            <img src="https://qph.cf2.quoracdn.net/main-qimg-86fa4d76a05cdf2523cecb56b998746c" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                                <h3>Sugriva</h3>
+                                <p> Sugriva is the younger brother of Vali, the king of the Vanara people. Sugriva was exiled from the kingdom of Kishkindha by Vali, and lived in exile with his followers at Rsyamukha hill.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-colors">
+                            <img src="https://neural.love/cdn/thumbnails/1eecc7e6-2f6a-630e-bdfe-fffe95bb5742/1f336efc-bba0-5b9a-8e31-79a6a63bf4cc.webp?Expires=1714521599&Signature=dXnUCrae-lCIkuDA~cdtdwDL~9LGB~wuyiMSe2RR7quIKwdTqB9oSvoYbod~0SL6A5yLOZe~ry9299G6i7rscW5XeSmlm96IXNd99zZpIg~vqnnRU86YPUEvBI~qIUYlZM7P0AvY3n28Ymfc-Dll9amaIucKZ0-hQkY3pNFT~6Tq1guWLnT~LgNTGC8r~6iZSFg-R7AwZV0DgK~Do-eBbRAalaD8H4MubMWvrMHHrr2c4Y2CLiUU6d0I-RSWh6eqwCCjnKpf~2RUwkjJLv~ezB2oXH6gPpGoqVfcnEXHTLBsakYrwsAy4oKQnWPJ~MHNgYq4jrLuiGlnfgA3XwzDQg__&Key-Pair-Id=K2RFTOXRBNSROX" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                                <h3>Ruma</h3>
+                                <p>Ruma was the wife of Sugriva in the Ramayana. She was the daughter of King Panasa, and the mother of three sons.
+                                    When the two royal Vānara brothers, Sugriva and Vāli, were in conflict, Vāli took Ruma from Sugriva. After Vāli was killed by Rama, Ruma was returned to Sugriva.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-colors">
+                            <img src="https://qph.cf2.quoracdn.net/main-qimg-e657d5edfd192375d6965664e96f4ea7" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                                <h3>Angada</h3>
+                                <p>He is the son of the powerful vanara king Vali and Tara. Angada is a vanara prince who is loyal to Lord Rama. He is known for his innocence, might, and righteousness. He is also a great warrior and master of illusions.
+                                    Angada helps Rama find his wife Sita and fight her abductor, Ravana. </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-colors">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVihM540-KK14Vmyb16Mz6G41aoij7SD0ebg&usqp=CAU" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                                <h3>Nala</h3>
+                                <p>Nala is a monkey-like Vanara who is credited with building a bridge across the ocean to Lanka. Nala was the son of the architect of the gods, Vishvakarma, and was equal to his father in skill. He was also given a boon by his father.
+                                    Nala's engineering expertise and dedication were crucial in building the bridge that facilitated Lord Rama's army's passage to Lanka, where Sita was held captive by Ravana. The bridge was also known as Rama Setu or Adam's Bridge. Nala uprooted an entire hill and carried it back to Lanka when he realized time was short. </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-colors">
+                            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/41449218-133a-4eae-b2c2-c7a14ded6e1c/dfqm5bf-5ab9f4dc-516b-483f-ac5a-b90f9ad789e1.png/v1/fill/w_1280,h_2118,q_80,strp/neel_vanara___by_akshaylasunkute_dfqm5bf-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjExOCIsInBhdGgiOiJcL2ZcLzQxNDQ5MjE4LTEzM2EtNGVhZS1iMmMyLWM3YTE0ZGVkNmUxY1wvZGZxbTViZi01YWI5ZjRkYy01MTZiLTQ4M2YtYWM1YS1iOTBmOWFkNzg5ZTEucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.0sDd82jasuAIZyfHhpMa00PpS_6O348YvRFmEgyC9jk" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                                <h3>Neela</h3>
+                                <p>He is the commander-in-chief of the monkey army under the monkey king Sugriva and is described as leading the army in Rama's battle against the rakshasa king Ravana of Lanka (identified with modern-day Sri Lanka) and as killing many rakshasas. Though, the Ramayana credits Nala as the sole builder of the Rama Setu, a bridge across the ocean between Rameswaram (India) and Lanka, enabling forces of Rama to pass over to Lanka, other adaptations of the epic attribute the bridge's construction to both Nala and Nila.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#kishkindaCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#kishkindaCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="d-flex flex-row justify-content-center m-4">
+                    <button class="button" onclick="display('sectionHome')">Back</button>
+                </div>
+            </div>
+        </div>
+        <div id="sectionLankaCharacters">
+            <div class="col-12">
+                <div id="lankaCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#lankaCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#lankaCarousel" data-slide-to="1"></li>
+                        <li data-target="#lankaCarousel" data-slide-to="2"></li>
+                        <li data-target="#lankaCarousel" data-slide-to="3"></li>
+                        <li data-target="#lankaCarousel" data-slide-to="4"></li>
+                        <li data-target="#lankaCarousel" data-slide-to="5"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active carousel-colors">
+                            <img src="https://www.mythoworld.com/wp-content/uploads/2022/01/Vibhishan-leaves-lanka-blog.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                                <h3>Vibhishana</h3>
+                                <p>He was the youngest brother of Ravana, the king of the demons, and was known for his righteousness and piety. Vibhishana was a rakshasa (demon) prince, but he was unlike his brothers and sister. He was a clever statesman, and was endowed with great learning.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-colors">
+                            <img src="https://img.freepik.com/premium-photo/front-view-ultra-detailed-goddess-sita_1018057-613.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                                <h3>Mandodari</h3>
+                                <p>She is the daughter of the monkey physician Sushena, and the wife of the monkey king Vali. Tara and Vali have a son named Angada.
+                                    Tara is described as a wise woman who always gives good counsel to her husband. She is also a skilled diplomat, and uses her skills to benefit her kingdom. Tara is also a loving mother, and is very close to her son Angada.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-colors">
+                            <img src="https://vedicfeed.com/wp-content/uploads/2020/05/supranakha-ravana-sister.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                                <h3>Surphanaka</h3>
+                                <p>Surpanakha is a demoness who is the sister of Ravana, the king of Lanka. Her name means "sharp nails" and she is described as having a pot belly, wry eyes, and coppery hair.
+                                    Surpanakha comes across Rama in the forest and is immediately smitten with his good looks. She asks him to marry her, but Rama refuses, telling her that he is devoted to his wife Sita. Surpanakha is enraged by this rejection and attacks Sita, but Lakshmana, Rama's brother, intervenes and cuts off Surpanakha's nose and ears.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-colors">
+                            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a179d6ef-1b19-4ca3-a934-29436412c76c/dg5ilsg-89f7bf2c-f72b-4387-bb53-30c8a2ad6c83.jpg/v1/fit/w_375,h_375,q_70,strp/kumbhakarna_1_by_zenart07_dg5ilsg-375w.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAyNCIsInBhdGgiOiJcL2ZcL2ExNzlkNmVmLTFiMTktNGNhMy1hOTM0LTI5NDM2NDEyYzc2Y1wvZGc1aWxzZy04OWY3YmYyYy1mNzJiLTQzODctYmI1My0zMGM4YTJhZDZjODMuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.m5Ck8Calo_euIW7TxGxesI1u8kCJi5jFzQMOs3uVD18" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                                <h3>Kumbhakarna</h3>
+                                <p>Ruma was the wife of Sugriva in the Ramayana. She was the daughter of King Panasa, and the mother of three sons.
+                                    When the two royal Vānara brothers, Sugriva and Vāli, were in conflict, Vāli took Ruma from Sugriva. After Vāli was killed by Rama, Ruma was returned to Sugriva.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-colors">
+                            <img src="https://qph.cf2.quoracdn.net/main-qimg-f50c76ad25db5167b4ac93424fdbe392-lq" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                                <h3>Meghnad</h3>
+                                <p>Meghnad is a major character. He is the eldest son of Ravana and Mandodari, and the crown prince of Lanka. He is also known as Indrajit, which means "Conqueror of Indra."
+                                    Meghnad is considered one of the greatest warriors in Hindu texts. He is a master of archery and illusion warfare techniques. He can also fight from the sky, hidden behind the clouds.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-colors">
+                            <img src="data:image/jpeg;base64,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" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                                <h3>Trijata</h3>
+                                <p>Trijata is a rakshasi (demoness) in the Hindu epic Ramayana who is assigned the duty of guarding Sita who was kidnapped by the demon-king of Lanka Ravana. She is described as a wise old rakshasi, who dreams of Ravana's destruction and the victory of Rama, the husband of Sita who wages war against Ravana to rescue Sita.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#lankaCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#lankaCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="d-flex flex-row justify-content-center m-4">
+                    <button class="button" onclick="display('sectionHome')">Back</button>
+                </div>
+            </div>
+        </div>
+        <div id="sectionSageCharacters">
+            <div class="col-12">
+                <div id="sageCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#sageCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#sageCarousel" data-slide-to="1"></li>
+                        <li data-target="#sageCarousel" data-slide-to="2"></li>
+                        <li data-target="#sageCarousel" data-slide-to="3"></li>
+                        <li data-target="#sageCarousel" data-slide-to="4"></li>
+                        <li data-target="#sageCarousel" data-slide-to="5"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active carousel-colors">
+                            <img src="https://fly.storage.tigris.dev/pai-images/8e0980b7428e4683973b1222b4746743.jpeg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                                <h3>Rishi Rishyashringa</h3>
+                                <p> The first Rishi who conducted the Putra Kameshthi Yagya, which resulted in Narayana's descent in the world</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-colors">
+                            <img src="https://img.freepik.com/premium-photo/illustration-guru-purnima-celebrated-by-hindus-buddhists-thank-their-teachers-ai-generated_852336-14345.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                                <h3>Rishi Vashishtha</h3>
+                                <p>Vashishtha is a revered sage in Hindu traditions and the family priest and preceptor of the Raghu dynasty in the Ramayana. He is the teacher of Lord Rama and his brothers, Lakshmana, Bharata, and Shatrughna. He is also the author of Mandala 7 of the Rigveda.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-colors">
+                            <img src="https://miro.medium.com/v2/resize:fit:1002/1*tZ-zTp7pvS8QMFgOJrEkfA@2x.jpeg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                                <h3>Rishi Vishwamitra</h3>
+                                <p>He is the one who takes Rama and Lakshmana to the forest to protect them from the demoness Tataka. He also teaches them the Bala Atibala Vidya, a secret knowledge that would keep them vigorous and full of vitality.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-colors">
+                            <img src="https://i.pinimg.com/736x/ba/e6/5b/bae65be5263249d2d95a0cf44b09dd71.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                                <h3>Rishi Agastya</h3>
+                                <p>Agastya is a sage who supports Rama and his brothers in their fight against the demon Ravana. Agastya is short and heavy, but by living in the south, he balances the powers of Shiva and the weight of Mount Kailasha and Mount Meru. Agastya also has the power to transform his body into any form and control the elements.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-colors">
+                            <img src="https://img.freepik.com/premium-photo/sage-saint-rishi-image-illustration-creative-illustration-generative-ai_117038-5431.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                                <h3>Rishi Atri</h3>
+                                <p>Atri is a Vedic sage in the Hindu religion. He is one of the seven great sages, or Saptarishis, and is the most mentioned sage in the Rig Veda. Atri is also one of the nine Prajapatis, or lords of creation. He is the son of Brahma, the creator god, and his wife, Saraswati, the goddess of knowledge. Atri's wife is Anasuya, who is an embodiment of chastity.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-colors">
+                            <img src="https://www.afternoonvoice.com/wp-content/uploads/2023/04/Brahmavadini-transformed.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                                <h3>Anasuya</h3>
+                                <p> She is the wife of the sage Atri and is known for her purity and chastity. She is also known for her hospitality and kindness, and is visited by Lord Rama, his wife Sita, and his brother Lakshmana during their exile in the forest. When they arrived at her ashram, Anasuya welcomed them warmly and served them with great care and affection.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-colors">
+                            <img src="https://qph.cf2.quoracdn.net/main-qimg-cc30d3227227b5cc48f23b87ce25bcff" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                                <h3>Ahalya</h3>
+                                <p>She was the wife of the sage Gautama Maharishi. According to legend, Indra, the ruler of the gods, was infatuated with Ahalya, so he disguised himself as Gautama and seduced her. When Gautama discovered what had happened, he cursed Ahalya to become a stone. She was freed from the curse by Rama, the seventh avatar of the god Vishnu.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#sageCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#sageCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="d-flex flex-row justify-content-center m-4">
+                    <button class="button" onclick="display('sectionHome')">Back</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-section">
+            <hr class="hr-line" />
+            <div class="text-center">
+                <i class="fa fa-copyright icon" aria-hidden="true"></i>
+                <span class="footer-section-copyright">2024 by Likhitha Raavi. Created with Bootstrap.</span>
+            </div>
+        </div>
+        <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+    </div>
+</body>
+
+</html>
